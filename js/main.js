@@ -2,7 +2,7 @@ console.clear();
 
 import { Kaitlente } from "./Kaitlente.js";
 
-const kaitlenciuKiekis = 5; 
+const kaitlenciuKiekis = 20; 
 
 //const h1DOM = document.querySelector('h1');
 
@@ -32,8 +32,8 @@ titleDOM.innerText = `Virtuve (${kaitlenciuKiekis})`;
 // }
 
 
-// skyleDOM = document.queryCommandValue('.kaitlente .skyle:nth-child(3)) ;
-// skylesDOM = document.queryCommandValueAll('.kaitlente .skyle) ;
+// skyleDOM = document.querySelector('.kaitlente .skyle:nth-child(3)) ;
+// skylesDOM = document.querySelectorAll('.kaitlente .skyle) ;
 
 document.querySelector('main').innerText = '';
 
@@ -42,5 +42,5 @@ console.log([document.querySelector('main')]);
 for (let i = 1; i <= kaitlenciuKiekis; i++) {
     const irenginys = new Kaitlente(i);
     irenginys.render();
-
+    irenginys.enableClicks();
 }
