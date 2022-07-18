@@ -2,7 +2,6 @@ class Kaitlente {
 
     constructor(skyliuKiekis) {
         this.size = skyliuKiekis; 
-        console.log(this);
     } 
 
     render () {
@@ -23,6 +22,12 @@ class Kaitlente {
     }
 
     enableClicks() {
+
+        const jungikliaiArray = Array.from(document.querySelectorAll(".jungiklis"));
+        const skylesArray = Array.from(document.querySelectorAll(".skyle"));
+
+        jungikliaiArray.forEach( )
+
         // cia aprasome veiksmu logika...
         // susirandame skyles
         // susirandame jungiklius
